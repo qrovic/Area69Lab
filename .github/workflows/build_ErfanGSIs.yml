@@ -50,7 +50,10 @@ jobs:
        
        - name: Zip Aonly and upload 
          run: |
-              ls ErfanGSIs/cache
-              
+              cd ErfanGSIs/cache
+              mkdir lol
+              sudo mount -o loop system.img lol/
+              ls lol
+              ls lol/system
          
             
