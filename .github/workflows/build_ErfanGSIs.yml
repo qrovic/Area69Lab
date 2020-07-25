@@ -64,6 +64,7 @@ jobs:
               ls shet/system/product/priv-app
               ls shet/system/product
               ls shet/product
+              
        - name: Zip Aonly and upload 
          run: |  
               cd ErfanGSIs
