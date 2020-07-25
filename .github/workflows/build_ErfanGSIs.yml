@@ -50,8 +50,7 @@ jobs:
        
        - name: Zip Aonly and upload 
          run: |
-              ls ErfanGSIs/system
-              ls ErfanGSIs/system/system
+              ls ErfanGSIs/cache
               
          
             
