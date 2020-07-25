@@ -68,7 +68,7 @@ jobs:
        - name: Zip Aonly and upload 
          run: |  
               cd ErfanGSIs
-              sudo ./make.sh shet Pixel AB out
+              sudo ./make.sh lol/shet Pixel AB out
               
          
             
