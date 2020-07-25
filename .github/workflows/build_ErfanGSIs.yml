@@ -57,7 +57,7 @@ jobs:
               cd ErfanGSIs/lol
               sudo mkdir shet
               sudo chmod 0777 shet
-              sudo mount -o ro system.img shet/
+              sudo mount -o loop system.img shet/
               ls shet/system/app
               ls shet/system/priv-app
               ls shet/system/product/app
