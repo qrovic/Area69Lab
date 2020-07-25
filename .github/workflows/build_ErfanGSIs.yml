@@ -58,7 +58,8 @@ jobs:
               sudo mkdir shet
               sudo chmod 0777 shet
               sudo mount -o ro system.img shet/
-              ls shet
-              ls shet/system
+              ls shet/system/product
+              ls shet/product
+              
          
             
