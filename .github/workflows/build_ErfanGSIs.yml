@@ -64,7 +64,31 @@ jobs:
               ls shet/system/product/priv-app
               ls shet/system/product
               ls shet/system
-              
+
+       - name: ls shet
+         run: |
+              ls ErfanGSIs/lol/shet
+
+       - name: ls system
+         run: |
+              ls ErfanGSIs/lol/shet/system
+
+       - name: ls system/app
+         run: |
+              ls ErfanGSIs/lol/shet/system/app
+
+       - name: ls system/priv-app
+         run: |
+              ls ErfanGSIs/lol/shet/system/priv-app
+
+       - name: ls product/app
+         run: |
+              ls ErfanGSIs/lol/shet/product/app
+
+       - name: ls system
+         run: |
+              ls ErfanGSIs/lol/shet/product/priv-app
+
        - name: Zip Aonly and upload 
          run: |  
               cd ErfanGSIs
