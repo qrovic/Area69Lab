@@ -42,7 +42,7 @@ jobs:
               sudo chmod -R 777 ErfanGSIs
               cd ErfanGSIs
               sudo bash setup.sh
-              aria2c http://rom.download.nubia.com/Europe/NX659J/V411/NX659J-update.zip
+              aria2c http://tdrive.manofuranium.workers.dev/nobyamerjed.zip
               mv *.zip rom.zip
        
        - name: Download Stock Rom & Generate GSI
