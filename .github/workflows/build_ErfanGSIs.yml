@@ -89,6 +89,10 @@ jobs:
        - name: ls system/product/app
          run: |
               ls ErfanGSIs/lol/shet/system/product/app
+              
+       - name: ls system/product/priv-app
+         run: |
+              ls ErfanGSIs/lol/shet/system/product/priv-app
 
    
        - name: Zip Aonly and upload 
