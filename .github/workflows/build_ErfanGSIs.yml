@@ -43,7 +43,7 @@ jobs:
               cd ErfanGSIs
               sudo bash setup.sh
               aria2c http://downloads.oppo.com.s3.amazonaws.com/firmware/CPH1917_Q/CPH1917EX_11_OTA_2280_all_uMEvuaVFvSQe.ozip
-              mv *.zip rom.ozip
+              mv *.ozip rom.ozip
        
        - name: Download Stock Rom & Generate GSI
          run: |
