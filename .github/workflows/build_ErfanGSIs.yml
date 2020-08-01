@@ -32,7 +32,6 @@ jobs:
          run: |
             sudo -E apt-get -qq update
             sudo -E apt-get -qq install git openjdk-8-jdk wget
-
        
        - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/qrovic/ErfanGSIs
@@ -42,13 +41,11 @@ jobs:
               sudo chmod -R 777 ErfanGSIs
               cd ErfanGSIs
               sudo bash setup.sh
-              aria2c http://downloads.oppo.com.s3.amazonaws.com/firmware/CPH1917_Q/CPH1917EX_11_OTA_2280_all_uMEvuaVFvSQe.ozip
-              mv *.ozip rom.ozip
+              aria2c http://tdrive.manofuranium.workers.dev/rom.zip
+              mv *.zip rom.zip
        
        - name: Download Stock Rom & Generate GSI
-         run: |
-              cd ErfanGSIs
-              sudo ./url2GSI.sh rom.ozip ColorOS
+         run: sudo ./ErfanGSIs/zip2img.sh ErfanGSIs/rom.zip
        
        - name: Zip Aonly and upload 
          run: |
@@ -63,23 +60,17 @@ jobs:
        - name: ls shet
          run: |
               ls ErfanGSIs/lol/shet
-
        - name: ls system
          run: |
               ls ErfanGSIs/lol/shet/system
-
        - name: ls system/app
          run: |
               ls ErfanGSIs/lol/shet/system/app
-
        - name: ls system/priv-app
          run: |
               ls ErfanGSIs/lol/shet/system/priv-app
-
-       - name: ls system/media
-         run: |
-              ls ErfanGSIs/lol/shet/system/media
-
+       - name: ls system/preset_apps
+       
        - name: ls system/product/app
          run: |
               ls ErfanGSIs/lol/shet/system/product
@@ -91,12 +82,3 @@ jobs:
        - name: ls system/product/priv-app
          run: |
               ls ErfanGSIs/lol/shet/system/product/priv-app
-
-   
-       - name: Zip Aonly and upload 
-         run: |  
-              cd ErfanGSIs
-              sudo ./make.sh lol/shet Pixel AB output
-              
-         
-            
