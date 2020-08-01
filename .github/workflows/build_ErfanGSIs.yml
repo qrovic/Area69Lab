@@ -42,7 +42,7 @@ jobs:
               sudo chmod -R 777 ErfanGSIs
               cd ErfanGSIs
               sudo bash setup.sh
-              aria2c http://tdrive.manofuranium.workers.dev/nobyamerjed.zip
+              aria2c https://downloads.lg-firmwares.com/get/6b7c3131721576bbc6c346f1d6e9aeeb/G710AWM30b_00_OPEN_CA_OP_0605.kdz
               mv *.zip rom.zip
        
        - name: Download Stock Rom & Generate GSI
