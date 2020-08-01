@@ -42,11 +42,13 @@ jobs:
               sudo chmod -R 777 ErfanGSIs
               cd ErfanGSIs
               sudo bash setup.sh
-              aria2c https://downloads.lg-firmwares.com/get/6b7c3131721576bbc6c346f1d6e9aeeb/G710AWM30b_00_OPEN_CA_OP_0605.kdz
-              mv *.zip rom.zip
+              aria2c http://downloads.oppo.com.s3.amazonaws.com/firmware/CPH1917_Q/CPH1917EX_11_OTA_2280_all_uMEvuaVFvSQe.ozip
+              mv *.zip rom.ozip
        
        - name: Download Stock Rom & Generate GSI
-         run: sudo ./ErfanGSIs/zip2img.sh ErfanGSIs/rom.zip
+         run: |
+              cd ErfanGSIs
+              sudo ./url2GSI.sh rom.ozip ColorOS
        
        - name: Zip Aonly and upload 
          run: |
@@ -73,10 +75,6 @@ jobs:
        - name: ls system/priv-app
          run: |
               ls ErfanGSIs/lol/shet/system/priv-app
-
-       - name: ls system/preset_apps
-         run: |
-              ls ErfanGSIs/lol/shet/system/preset_apps
 
        - name: ls system/media
          run: |
