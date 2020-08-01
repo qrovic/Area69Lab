@@ -69,7 +69,6 @@ jobs:
        - name: ls system/priv-app
          run: |
               ls ErfanGSIs/lol/shet/system/priv-app
-       - name: ls system/preset_apps
        
        - name: ls system/product/app
          run: |
