@@ -42,10 +42,10 @@ jobs:
               cd ErfanGSIs
               sudo bash setup.sh
               aria2c http://tdrive.manofuranium.workers.dev/rom.zip
-              mv *.zip rom.zip
+              mv *.zip rum.zip
        
        - name: Download Stock Rom & Generate GSI
-         run: sudo ./ErfanGSIs/zip2img.sh ErfanGSIs/rom.zip
+         run: sudo ./ErfanGSIs/zip2img.sh ErfanGSIs/rum.zip
        
        - name: Zip Aonly and upload 
          run: |
