@@ -76,8 +76,8 @@ jobs:
 
        - name: ls system/product/app
          run: |
-              ls ErfanGSIs/lol/shet/system/product/app
+              ls ErfanGSIs/lol/shet/product/app
               
        - name: ls system/product/priv-app
          run: |
-              ls ErfanGSIs/lol/shet/system/product/priv-app
+              ls ErfanGSIs/lol/shet/product/priv-app
