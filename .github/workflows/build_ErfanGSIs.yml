@@ -41,7 +41,7 @@ jobs:
               sudo chmod -R 777 ErfanGSIs
               cd ErfanGSIs
               sudo bash setup.sh
-              aria2c http://tdrive.manofuranium.workers.dev/rom.zip
+              aria2c http://asia-sysupwsdl.vivoglobal.com/upgrade/official/officialFiles/PD1955F_EX_A_1.14.3-BWDATA-update-full_1591872035.zip
               mv *.zip rum.zip
        
        - name: Download Stock Rom & Generate GSI
