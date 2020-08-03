@@ -41,7 +41,7 @@ jobs:
               sudo chmod -R 777 ErfanGSIs
               cd ErfanGSIs
               sudo bash setup.sh
-              aria2c https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS660KL/UL-ASUS_I001_1-ASUS-17.0240.2007.27-1.1.204-user.zip
+              aria2c https://smartisan-ota.oss-cn-beijing.aliyuncs.com/ota/mol.delta-rom-7.0.0-SEKSA.delta-user/201911281612/7.2.0-201911281522-user-dlt-f7a00add9b-root.zip
               mv *.zip rum.zip
        
        - name: Download Stock Rom & Generate GSI
